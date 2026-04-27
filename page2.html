@@ -1,19 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Other page</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/page2.html" aria-current="page">Other page</a>
-    </nav>
-    <main>
-      <h1>My other page</h1>
-    </main>
-  </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico - Luis Jesus Trujillo La Torre</title>
+    <style>
+        /* Configuración Global */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        /* Títulos */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-weight: bold !important;
+            font-size: 1.8rem !important;
+            color: #D35400 !important; /* Naranja Oscuro */
+            border-left: 5px solid #D35400;
+            padding-left: 15px;
+            margin-top: 50px;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            color: #34495e;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        /* Elementos de Texto */
+        .author-name {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .description {
+            background: #fcfcfc;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #efefef;
+        }
+
+        /* Imágenes y Gráficos */
+        .media-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .banner-img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+        }
+
+        /* Listas y Enlaces */
+        .source-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .source-list li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        .source-list a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .source-list a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background: #eee;
+            margin: 40px 0;
+        }
+
+        /* Clases de utilidad para los reportes */
+        .report-block {
+            margin-bottom: 60px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Trabajo Práctico</h1>
+    <p class="author-name">Nombre: Luis Jesus Trujillo La Torre</p>
+    
+    <div class="media-container">
+        <img src="./images/Wallpaper.jpg" class="banner-img" alt="Encabezado del proyecto">
+    </div>
+
+    <h2>Fuentes</h2>
+    <ul class="source-list">
+        <li><strong>URL del presente proyecto:</strong> 
+            <a href="https://viu-cg4a--8080--4c73681d.local-credentialless.webcontainer.io">my_project_url</a>
+        </li>
+        <li><strong>URL de Google Colab:</strong> 
+            <a href="https://colab.research.google.com/drive/1UrhLJZcCVR1goVqSdoMAf_vUiU8cat1e?usp=sharing">google_colab</a>
+        </li>
+        <li><strong>URL de Kaggle:</strong> 
+            <a href="https://www.kaggle.com/datasets/disham993/9000-movies-dataset">dataset</a>
+        </li>
+    </ul>
+
+    <h2>Descripción General</h2>
+    <div class="description">
+        <p>Este proyecto es una solución integral de <strong>Data Engineering</strong> y <strong>Business Intelligence</strong> diseñada para analizar el mercado global del cine. El flujo de trabajo abarca desde la limpieza programática en Python hasta la publicación de resultados en la web, integrando herramientas líderes en la industria para transformar un dataset crudo (MyMovieDB) en una plataforma de consulta interactiva.</p>
+    </div>
+
+    <hr>
+
+    <section class="report-block">
+        <div class="media-container">
+            <h2>Google Colab</h2>
+            <img src="./images/Logo_Colab.png" width="200" alt="Logo Colab">
+        </div>
+
+        <h3>Top 10 Películas más Populares y su Fecha de Estreno</h3>
+        <p><b>Tipo de Gráfico:</b> Gráfico de Barras Horizontales (Horizontal Bar Chart).</p>
+        <p><b>Descripción:</b> Análisis de popularidad dentro del dataset <i>mymoviedb_limpio.csv</i>.</p>
+        <p><b>Justificación:</b> El estándar técnico para análisis "Top-K", facilitando la lectura de títulos largos.</p>
+        
+        <div id="10ce02bf-1f8f-4ef7-afb0-94dbd68aef78"></div>
+
+        <h3>Tendencias del Cine: Cantidad, Popularidad y Calidad por Año</h3>
+        <p><b>Tipo de Gráfico:</b> Bubble Chart con interactividad.</p>
+        <p><b>Pregunta de Negocio:</b> ¿Cómo ha afectado el volumen de producción a la calidad percibida?</p>
+        
+        <div id="29575ca4-91ca-4de1-b89e-7f701173ab05"></div>
+        
+        <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+        </section>
+
+    <hr>
+
+    <section class="report-block">
+        <div class="media-container">
+            <h2>PowerBI</h2>
+            <img src="./images/Logo_PowerBI.png" width="200" alt="Logo Power BI">
+        </div>
+
+        <h3>Participación de Votos por Género y Popularidad de Contenido</h3>
+        <p><b>Enfoque:</b> Toma de Decisiones (Inversión/Producción).</p>
+        <div class="media-container">
+            <img src="./images/Vis_1.jpg" alt="Visualización Treemap">
+        </div>
+
+        <h3>Top 10 de Calificaciones Promedio</h3>
+        <div class="media-container">
+            <img src="./images/Vis_2.jpg" alt="Gráfico de Columnas">
+        </div>
+
+        <h3>Análisis Jerárquico del Top 5 de géneros</h3>
+        <div class="media-container">
+            <img src="./images/Vis_3.jpg" alt="Esquema Jerárquico">
+        </div>
+
+        <h3>Tendencias de Popularidad y Calificación</h3>
+        <div class="media-container">
+            <img src="./images/Vis_4.jpg" alt="Gráfico de Dispersión Animado">
+        </div>
+    </section>
+</div>
+
+</body>
 </html>
