@@ -1,20 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabajo Práctico</title>
+</head>
+<body>
+
 <h1>Trabajo Practico</h1>
 
-Nombre: Luis Jesus Trujillo La Torre
+<p>Nombre: Luis Jesus Trujillo La Torre</p>
 
 <br />
 
 URL:
-
-<a
-  href="https://mbid08ag-3tb0--8080--4c73681d.local-credentialless.webcontainer.io"
->
-  my_project_url</a
->
+<a href="https://viu-cg4a--8080--4c73681d.local-credentialless.webcontainer.io">
+  my_project_url
+</a>
 
 <hr />
 
-<h2>Google Sheets</h2>
+<h2>Google Colab</h2>
 
 <iframe
   width="600"
@@ -25,85 +30,40 @@ URL:
   src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSapLO2CRgvGwlJ7OEZiO2M1IEs_ML9S19R4Jiq1r8BpXbLvwwcF-_Hy3ECYKg2nx8iRes5pNPFp4TP/pubchart?oid=1093582637&amp;format=interactive"
 ></iframe>
 
-<img src="./images/Vis_0.png" width="600" height="371" alt="“Foto”" />
+<center>
+  <h2>PowerBI</h2>
+    <h3>Participación de Votos por Género y Popularidad de Contenido</h3>
+    <p><b>Tipo de Gráfico:</b> Treemap (Mapa de Árbol)</p>
+    <p><b>Descripción:</b> Para visualizar la participación de votos por género y popularidad de mi dataset.</p>
+    <p><b>Pregunta de Negocio:</b> ¿En qué géneros cinematográficos debería enfocarse una nueva producción para asegurar tanto un alto volumen de interacción (votos) como una relevancia actual (popularidad)?</p>
+    <p><b>Enfoque:</b> Toma de Decisiones (Inversión/Producción)</p>
+    <p><b>Justificación:</b> Se optó por un Treemap debido a su capacidad para representar estructuras jerárquicas y proporcionales de manera compacta. Esta visualización permite analizar simultáneamente el volumen de participación (mediante el área de los rectángulos) y la intensidad de la popularidad (mediante la escala cromática), facilitando la identificación de los géneros que lideran la industria y aquellos que, a pesar de tener menor volumen, presentan una alta relevancia en las tendencias actuales del dataset. Permite visualizar una gran cantidad de categorías (Acción, Comedia, Drama, etc.) en un solo vistazo, manteniendo la legibilidad incluso para géneros con menor participación que quedarían ocultos o amontonados en otros tipos de visualizaciones.</p>
+    <img src="./images/Vis_1.jpg" width="1000" height="600" alt="Foto" />
+    
+    <h3>Top 10 de Calificaciones Promedio según Diversidad Lingüística</h3>
+    <p><b>Tipo de Gráfico:</b> Gráfico de Columnas Agrupadas</p>
+    <p><b>Descripción:</b> Es una de las herramientas más potentes para comparar categorías discretas.</p>
+    <p><b>Pregunta de Negocio:</b> ¿Cómo se distribuye el volumen de producción entre los 10 rangos de calificación más altos y cuál es el estándar de calidad más frecuente para la diversidad lingüística global?</p>
+    <p><b>Enfoque:</b> Excelencia Crítica (Basado en el Top 10 de Notas)</p>
+    <p><b>Justificación:</b> Se utilizó un gráfico de columnas para representar la distribución de frecuencias de la calidad. Es el formato más eficaz para comparar con precisión cuántos idiomas (volumen) se sitúan en cada rango de calificación, permitiendo identificar rápidamente la tendencia central y la dispersión del desempeño crítico en el dataset. La visualización demuestra que, aunque existe una oferta lingüística amplia en niveles de excelencia, el mercado tiende a estabilizarse en un promedio de 6.4. Esto sugiere que para un distribuidor de contenido, el 'Top 10' de idiomas no es un bloque uniforme, sino un ecosistema donde la calidad superior (7.2) es un recurso más escaso y, por lo tanto, de mayor valor competitivo.</p>
+    <img src="./images/Vis_2.jpg" width="1000" height="600" alt="Foto" />
+    
+    <h3>Análisis Jerárquico del Top 5 de géneros</h3>
+    <p><b>Tipo de Gráfico:</b> Esquema Jerárquico</p>
+    <p><b>Descripción:</b> debemos destacar cómo el gráfico permite comparar estos mercados específicos de manera granular.</p>
+    <p><b>Pregunta de Negocio:</b> ¿De qué manera contribuyen los 5 idiomas principales al volumen total de títulos y qué perfiles de calificación y popularidad definen el éxito de cada una de estas lenguas predominantes?</p>
+    <p><b>Enfoque:</b> Descomposición Multidimensional</p>
+    <p><b>Justificación:</b> Se utilizó el Esquema Jerárquico para realizar un desglose multidimensional enfocado en el Top 5 de idiomas del dataset. Esta visualización es superior para este análisis porque permite observar la trazabilidad del dato: desde el volumen general de títulos hasta el comportamiento específico de cada uno de los 5 idiomas líderes (zh, th, tr, tl, uk). Facilita la identificación de discrepancias, como descubrir qué idiomas dentro del Top 5 mantienen una alta calidad crítica (Vote_Average) frente a su nivel de popularidad, permitiendo una exploración de causa-raíz que los gráficos convencionales no ofrecen.</p>
+    <img src="./images/Vis_3.jpg" width="1000" height="600" alt="Foto" />
+    
+    <h3>Tendencias de Popularidad y Calificación: Top 5 Idiomas (Última Década)</h3>
+    <p><b>Tipo de Gráfico:</b> Gráfico de Dispersión Animado</p>
+    <p><b>Descripción:</b> Destaca la relación entre variables y el factor tiempo.</p>
+    <p><b>Pregunta de Negocio:</b> ¿Cómo ha evolucionado la relación entre la popularidad y la calidad crítica de los 5 idiomas principales en la última década, y qué mercados lingüísticos han mostrado un crecimiento más sostenido y competitivo?</p>
+    <p><b>Enfoque:</b> Descomposición Multidimensional</p>
+    <p><b>Justificación:</b> Se seleccionó este gráfico para realizar un análisis de correlación dinámica entre la Popularidad y la Calidad Crítica. A diferencia de las visualizaciones estáticas, el uso de un eje de reproducción permite observar la trayectoria temporal y la evolución competitiva del Top 5 de idiomas, facilitando la identificación de tendencias de crecimiento, cambios en la percepción del usuario y el surgimiento de mercados emergentes a lo largo de la última década.</p>
+    <img src="./images/Vis_4.jpg" width="1000" height="600" alt="Foto" />
+</center>
 
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-
-<h2>Datawrapper</h2>
-
-<iframe
-  title="CO2 Totales vs CO2 per capita"
-  aria-label="Diagrama de dispersión"
-  id="datawrapper-chart-bIaRh"
-  src="https://datawrapper.dwcdn.net/bIaRh/2/"
-  scrolling="no"
-  frameborder="0"
-  style="width: 0; min-width: 100% !important; border: none"
-  height="496"
-  data-external="1"
-></iframe>
-<script type="text/javascript">
-  window.addEventListener('message', function (a) {
-    if (void 0 !== a.data['datawrapper-height']) {
-      var e = document.querySelectorAll('iframe');
-      for (var t in a.data['datawrapper-height'])
-        for (var r, i = 0; (r = e[i]); i++)
-          if (r.contentWindow === a.source) {
-            var d = a.data['datawrapper-height'][t] + 'px';
-            r.style.height = d;
-          }
-    }
-  });
-</script>
-
-<br />
-
-<iframe
-  title="Cantidad de Emisión de Co2 por País"
-  aria-label="Bar Chart"
-  id="datawrapper-chart-QKUBy"
-  src="https://datawrapper.dwcdn.net/QKUBy/1/"
-  scrolling="no"
-  frameborder="0"
-  style="width: 0; min-width: 100% !important; border: none"
-  height="305"
-  data-external="1"
-></iframe>
-<script type="text/javascript">
-  window.addEventListener('message', function (a) {
-    if (void 0 !== a.data['datawrapper-height']) {
-      var e = document.querySelectorAll('iframe');
-      for (var t in a.data['datawrapper-height'])
-        for (var r, i = 0; (r = e[i]); i++)
-          if (r.contentWindow === a.source) {
-            var d = a.data['datawrapper-height'][t] + 'px';
-            r.style.height = d;
-          }
-    }
-  });
-</script>
-
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-
-<h2>PowerBI</h2>
-<img src="./images/Vis_1.png" width="600" height="371" alt="“Foto”" />
-<img src="./images/Vis_2.png" width="600" height="371" alt="“Foto”" />
-<img src="./images/Vis_3.png" width="600" height="371" alt="“Foto”" />
+</body>
+</html>
