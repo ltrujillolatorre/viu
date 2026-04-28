@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabajo Práctico - Luis Jesus Trujillo La Torre</title>
+    <title>Análisis Evolutivo y Correlacional de la Industria del Cine</title>
     <style>
         /* Configuración Global */
         body {
@@ -121,15 +121,22 @@
 <body>
 
 <div class="container">
-    <h1>Trabajo Práctico</h1>
-    <p class="author-name">Nombre: Luis Jesus Trujillo La Torre</p>
+    <h1>Análisis Evolutivo y Correlacional de la Industria del Cine</h1>
+    <p class="author-name">Autor: Luis Jesus Trujillo La Torre</p>
     
     <div class="media-container">
         <img src="./images/Wallpaper.jpg" class="banner-img" alt="Encabezado del proyecto">
     </div>
 
-    <h2>Fuentes</h2>
+    <h2>Origen de Datos</h2>
+
     <ul class="source-list">
+    <li><strong>URL de Kaggle:</strong> 
+        <a href="https://www.kaggle.com/datasets/disham993/9000-movies-dataset">dataset</a>
+    </li>
+
+    <h2>Mis URL</h2>
+   
         <li><strong>URL del repositorio GitHub:</strong> 
           <a href="https://stackblitz.com/~/github.com/ltrujillolatorre/viu">viu</a>
         </li>
@@ -139,21 +146,62 @@
         <li><strong>URL de Google Colab:</strong> 
             <a href="https://colab.research.google.com/drive/1UrhLJZcCVR1goVqSdoMAf_vUiU8cat1e?usp=sharing">google_colab</a>
         </li>
-        <li><strong>URL de Kaggle:</strong> 
-            <a href="https://www.kaggle.com/datasets/disham993/9000-movies-dataset">dataset</a>
-        </li>
     </ul>
 
-    <h2>Descripción General</h2>
-    <div class="description">
-        <p>Este proyecto es una solución integral de <strong>Data Engineering</strong> y <strong>Business Intelligence</strong> diseñada para analizar el mercado global del cine. El flujo de trabajo abarca desde la limpieza programática en Python hasta la publicación de resultados en la web, integrando herramientas líderes en la industria para transformar un dataset crudo (MyMovieDB) en una plataforma de consulta interactiva.</p>
+    <h2>Introducción</h2>
+    <div class="Introducción">
+        <p>El presente proyecto constituye una solución integral de Data Engineering y Business Intelligence (BI) orientada al análisis exhaustivo delmercado cinematográfico global. En un ecosistema digital donde la producción de contenidos ha crecido de forma exponencial, la capacidadde transformar datos crudos en decisiones estratégicas es un factor diferenciador crítico. El flujo de trabajo implementado abarca el ciclo devida completo del dato: partiendo de un dataset primario (MyMovieDB), se aplicó una fase de limpieza programática mediante Python enentornos de Google Colab, asegurando la integridad y calidad de la información. Posteriormente, los datos fueron procesados para generar modelos analíticos que permiten explorar dimensiones como la popularidad, la excelencia crítica y la diversidad lingüística. A través de unaarquitectura que culmina en una plataforma de consulta interactiva web, este informe detalla cómo el análisis técnico permite identificarnichos de mercado, evaluar el impacto de eventos globales (como el periodo 2020-2022) y predecir tendencias de éxito en la industria delséptimo arte.</p>    
     </div>
 
     <hr>
+    <h1><center>ASPECTOS TEÓRICOS</center></h1>
+
+    <h2>Audiencia</h2>
+
+    <ul>
+    <li>La presentación está diseñada para un perfil híbrido, impactando a dos grupos clave:Stakeholders y Tomadores de Decisiones:Ejecutivos de productoras o distribuidoras interesados en identificar nichos de "alta calidad" y tendencias de mercado para futurasinversiones.</li>
+    <li>Equipos Técnicos (Data Engineers/Analysts): Profesionales interesados en la arquitectura del flujo de trabajo, desde la limpiezaprogramática hasta la trazabilidad del dato y el despliegue de soluciones interactivas.</li>
+    </ul>
+
+    <h2>Objetivos</h2>
+    
+    <p>Objetivos</p>
+    <ul>
+    <li>Demostrar Capacidad Técnica: Validar el uso de herramientas líderes (Python, Google Colab, Power BI) para transformar un datasetcrudo en una plataforma de consulta profesional.</li>
+    <li>Extraer Valor de Negocio: Proveer un análisis multidimensional que identifique cómo el volumen de producción afecta la calidadpercibida y qué géneros o idiomas lideran la industria actual.</li>
+    <li>Optimización de Estrategias: Facilitar la detección de oportunidades en mercados lingüísticos específicos y géneros con alto potencialde interacción (votos).</li>
+    </ul>
+
+    <p>Se espera de la Audiencia</p>
+    <ul>
+    <li>Claridad en los Datos: Una comparación milimétrica de los títulos líderes y una visión clara de la evolución histórica del cine.</li>
+    <li>Insights Accionables: Entender si la cantidad masiva de contenido reciente está sacrificando la calidad y dónde se encuentran losrecursos competitivos más valiosos.</li>
+    <li>Interactividad y Trazabilidad: Una herramienta que permita explorar la relación entre popularidad, tiempo e idioma de manera dinámicay granular.</li>
+    </ul>
+
+    <h1><center>HERRAMIENTAS</center></h1>
+
+    <h2>Google Colab</h2>
+
+    <ul>
+    <li>Procesamiento Programático y Limpieza: Te permitió aplicar scripts de Python para realizar una limpieza exhaustiva del dataset crudo"MyMovieDB", transformándolo en un archivo optimizado (mymoviedb_limpio.csv) listo para el análisis.</li>
+    <li>Análisis Exploratorio y Tendencias: En este entorno realizaste el análisis de rendimiento de producto y detectaste tendenciashistóricas, como el crecimiento exponencial de la producción desde la década de 1980 y el impacto específico del periodo 2020-2022.</li>
+    <li>Accesibilidad y Colaboración: Al ser una plataforma basada en la nube, te facilitó la integración con el repositorio de GitHub y permitióun flujo de trabajo documentado y reproducible desde cualquier lugar.</li>
+    </ul>
+
+    <h2>PowerBI</h2>
+
+    <ul>
+    <li>Análisis Multidimensional de Alta Granularidad: La utilizaste para crear visualizaciones complejas que permiten analizarsimultáneamente múltiples dimensiones, como el Treemap para la participación de votos por género o el Esquema Jerárquico para latrazabilidad de idiomas.</li>
+    <li>Interactividad Dinámica para la Toma de Decisiones: Te permitió implementar gráficos de dispersión animados para observar latrayectoria temporal de los mercados lingüísticos, facilitando que la audiencia identifique mercados emergentes y nichos de "alta calidad" de forma visual e intuitiva.</li>
+    <li>Capacidad de Comunicación Ejecutiva: Transformó los datos procesados en un formato profesional que permite a los directivos
+        entender rápidamente brechas de rendimiento, como la que existe entre la película #1 y el resto del catálogo.</li>
+    </ul>
 
     <section class="report-block">
+        <h2>Visualizaciones con Google Colab (Dinámicas)</h2>
         <div class="media-container">
-            <h2>Google Colab</h2>
+            
             <img src="./images/Logo_Colab.png" width="200" alt="Logo Colab">
         </div>
 
@@ -206,8 +254,8 @@
         <hr>
 
     <section class="report-block">
+        <h2>Visualizaciones con PowerBI (Estáticas)</h2>
         <div class="media-container">
-            <h2>PowerBI</h2>
             <img src="./images/Logo_PowerBI.png" width="200" alt="Logo Power BI">
         </div>
 
@@ -215,7 +263,7 @@
         <p><b>Tipo de Gráfico:</b> Treemap (Mapa de Árbol)</p>
         <p><b>Descripción:</b> Para visualizar la participación de votos por género y popularidad de mi dataset.</p>
         <p><b>Pregunta de Negocio:</b> ¿En qué géneros cinematográficos debería enfocarse una nueva producción para asegurar tanto un alto volumen de interacción (votos) como una relevancia actual (popularidad)?</p>
-        <p><b>Enfoque:</b> Toma de Decisiones (Inversión/Producción)</p>
+        <p><b>Enfoque:</b> Toma de Decisiones (Inversión/Producción).</p>
         <p><b>Justificación:</b> Se optó por un Treemap debido a su capacidad para representar estructuras jerárquicas y proporcionales de manera compacta. Esta visualización permite analizar simultáneamente el volumen de participación (mediante el área de los rectángulos) y la intensidad de la popularidad (mediante la escala cromática), facilitando la identificación de los géneros que lideran la industria y aquellos que, a pesar de tener menor volumen, presentan una alta relevancia en las tendencias actuales del dataset. Permite visualizar una gran cantidad de categorías (Acción, Comedia, Drama, etc.) en un solo vistazo, manteniendo la legibilidad incluso para géneros con menor participación que quedarían ocultos o amontonados en otros tipos de visualizaciones.</p>
         <div class="media-container">
             <img src="./images/Vis_1.jpg" alt="Visualización Treemap">
@@ -225,7 +273,7 @@
         <p><b>Tipo de Gráfico:</b> Gráfico de Columnas Agrupadas</p>
         <p><b>Descripción:</b> Es una de las herramientas más potentes para comparar categorías discretas.</p>
         <p><b>Pregunta de Negocio:</b> ¿Cómo se distribuye el volumen de producción entre los 10 rangos de calificación más altos y cuál es el estándar de calidad más frecuente para la diversidad lingüística global?</p>
-        <p><b>Enfoque:</b> Excelencia Crítica (Basado en el Top 10 de Notas)</p>
+        <p><b>Enfoque:</b> Excelencia Crítica (Basado en el Top 10 de Notas).</p>
         <p><b>Justificación:</b> Se utilizó un gráfico de columnas para representar la distribución de frecuencias de la calidad. Es el formato más eficaz para comparar con precisión cuántos idiomas (volumen) se sitúan en cada rango de calificación, permitiendo identificar rápidamente la tendencia central y la dispersión del desempeño crítico en el dataset. La visualización demuestra que, aunque existe una oferta lingüística amplia en niveles de excelencia, el mercado tiende a estabilizarse en un promedio de 6.4. Esto sugiere que para un distribuidor de contenido, el 'Top 10' de idiomas no es un bloque uniforme, sino un ecosistema donde la calidad superior (7.2) es un recurso más escaso y, por lo tanto, de mayor valor competitivo.</p>
         <div class="media-container">
             <img src="./images/Vis_2.jpg" alt="Gráfico de Columnas">
@@ -235,7 +283,7 @@
         <p><b>Tipo de Gráfico:</b> Esquema Jerárquico</p>
         <p><b>Descripción:</b> debemos destacar cómo el gráfico permite comparar estos mercados específicos de manera granular.</p>
         <p><b>Pregunta de Negocio:</b> ¿De qué manera contribuyen los 5 idiomas principales al volumen total de títulos y qué perfiles de calificación y popularidad definen el éxito de cada una de estas lenguas predominantes?</p>
-        <p><b>Enfoque:</b> Descomposición Multidimensional</p>
+        <p><b>Enfoque:</b> Descomposición Multidimensional.</p>
         <p><b>Justificación:</b> Se utilizó el Esquema Jerárquico para realizar un desglose multidimensional enfocado en el Top 5 de idiomas del dataset. Esta visualización es superior para este análisis porque permite observar la trazabilidad del dato: desde el volumen general de títulos hasta el comportamiento específico de cada uno de los 5 idiomas líderes (zh, th, tr, tl, uk). Facilita la identificación de discrepancias, como descubrir qué idiomas dentro del Top 5 mantienen una alta calidad crítica (Vote_Average) frente a su nivel de popularidad, permitiendo una exploración de causa-raíz que los gráficos convencionales no ofrecen.</p>
         <div class="media-container">
             <img src="./images/Vis_3.jpg" alt="Esquema Jerárquico">
@@ -245,11 +293,51 @@
         <p><b>Tipo de Gráfico:</b> Gráfico de Dispersión Animado</p>
         <p><b>Descripción:</b> Destaca la relación entre variables y el factor tiempo.</p>
         <p><b>Pregunta de Negocio:</b> ¿Cómo ha evolucionado la relación entre la popularidad y la calidad crítica de los 5 idiomas principales en la última década, y qué mercados lingüísticos han mostrado un crecimiento más sostenido y competitivo?</p>
-        <p><b>Enfoque:</b> Descomposición Multidimensional</p>
+        <p><b>Enfoque:</b> Descomposición Multidimensional.</p>
         <p><b>Justificación:</b> Se seleccionó este gráfico para realizar un análisis de correlación dinámica entre la Popularidad y la Calidad Crítica. A diferencia de las visualizaciones estáticas, el uso de un eje de reproducción permite observar la trayectoria temporal y la evolución competitiva del Top 5 de idiomas, facilitando la identificación de tendencias de crecimiento, cambios en la percepción del usuario y el surgimiento de mercados emergentes a lo largo de la última década.</p>
         <div class="media-container">
             <img src="./images/Vis_4.jpg" alt="Gráfico de Dispersión Animado">
         </div>
+
+        <h2>Conclusiones</h2>
+    
+        <p>1. Conclusiones sobre Aspectos Teóricos</p>
+        <ul>
+        <li>Enfoque End-to-End: El proyecto demuestra la viabilidad de una solución integral de Data Engineering y Business Intelligence,cubriendo desde la limpieza programática hasta la publicación web.</li>
+        <li>Análisis de Rendimiento y Calidad: Teóricamente, el estudio se fundamenta en el Product Performance Analysis, permitiendoidentificar brechas de rendimiento entre productos líderes y el resto del catálogo.</li>
+        <li>Ciclo de Vida de la Industria: Se concluye que el crecimiento masivo en el volumen de producción no garantiza un aumento en lacalidad, observándose una saturación que requiere estrategias de inversión en nichos de "alta calidad".</li>
+        <li>Valor de la Diversidad Lingüística: El análisis teórico sugiere que el mercado no es un bloque uniforme, sino un ecosistema donde lacalidad superior en diferentes idiomas es un recurso escaso y competitivo.</li>
+        </ul>
+    
+        <p>2. Conclusiones sobre Gráficos Empleados</p>
+        <ul>
+        <li>Eficacia del Top-K: El uso de gráficos de barras horizontales se valida como el estándar técnico óptimo para comparar películaspopulares, facilitando la lectura de etiquetas largas y la comparación milimétrica de métricas.</li>
+        <li>Visualización Multidimensional: El gráfico de burbujas temporal permitió detectar correlaciones complejas entre cuatro dimensiones($X$, $Y$, Tamaño y Color), evidenciando el pico de producción en 2019 y la caída post-pandemia.</li>
+        <li>Estructura Jerárquica y Proporcional: El Treemap y el Esquema Jerárquico resultaron superiores para visualizar la participación devotos y la trazabilidad del dato, permitiendo identificar causas raíz que los gráficos convencionales no ofrecen.</li>
+        <li>Análisis Dinámico: Los gráficos de dispersión animados permitieron observar la trayectoria temporal de los mercados lingüísticos,facilitando la identificación de tendencias de crecimiento sostenido.</li>
+        </ul>
+        
+        <p>3. Conclusiones sobre Datos Consultados</p>
+        <ul>
+        <li>Dataset MyMovieDB: La fuente primaria permitió una transformación exitosa desde un estado crudo hacia un dataset optimizadodenominado mymoviedb_limpio.csv.</li>
+        <li>Tendencia Central de Calidad: Los datos consultados revelan que, a pesar de la amplia oferta, el mercado tiende a estabilizarse en unpromedio de calificación de 6.4.</li>
+        <li>Dominio de Géneros: El análisis de los datos históricos (1970-2024) confirma que el Drama ha sido el género con mayor volumen deproducción, seguido por la Comedia y el Acción.</li>
+        <li>Mercados Lingüísticos Clave: Se identificaron idiomas como zh, th, tr, tl y uk como los líderes en volumen y calidad dentro del Top 5 dela diversidad lingüística analizada.</li>
+        </ul>
+
+        <h2>Referencias Bibliográficas</h2>
+
+        <ul>
+        <li>Kaggle. (2026). MyMovieDB: Dataset global de la industria cinematográfica.</li>
+        <li>Google. (2026). Google Colab: Entorno de ejecución para limpieza programática en Python.</li>
+        <li>Microsoft. (2026). Power BI: Plataforma de Business Intelligence y visualización de datos de alta granularidad.</li>
+        <li>Python Software Foundation. (2026). Librerías de procesamiento de datos para la generación del dataset mymoviedb_limpio.csv.</li>
+        <li>Wickham, H. (2014). Tidy Data. Journal of Statistical Software.</li>
+        <li>Porter, M. E. (1980). Competitive Strategy: Techniques for Analyzing Industries and Competitors. Free Press.</li>
+        <li>Schumpeter, J. A. (1939). Business Cycles: A Theoretical, Historical, and Statistical Analysis of the Capitalist Process. McGraw-Hill.</li>
+        <li>Tufte, E. R. (2001). The Visual Display of Quantitative Information. Graphics Press.</li>
+        <li>Davenport, T. H. (2006). Competing on Analytics. Harvard Business Review.</li>
+        </ul>
     </section>
 </div>
 

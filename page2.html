@@ -10,7 +10,7 @@
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f9f9f9;
+            background-color: #f4f7f6;
             margin: 0;
             padding: 0;
         }
@@ -30,6 +30,8 @@
             color: #2c3e50;
             font-size: 2.5rem;
             margin-bottom: 10px;
+            border-bottom: 3px solid #D35400;
+            padding-bottom: 15px;
         }
 
         h2 {
@@ -46,7 +48,7 @@
             color: #34495e;
             border-bottom: 1px solid #eee;
             padding-bottom: 10px;
-            margin-top: 30px;
+            margin-top: 35px;
         }
 
         /* Elementos de Texto */
@@ -55,25 +57,33 @@
             font-weight: bold;
             font-size: 1.1rem;
             color: #555;
+            margin-bottom: 30px;
         }
 
         .description {
             background: #fcfcfc;
-            padding: 20px;
+            padding: 25px;
             border-radius: 5px;
             border: 1px solid #efefef;
+            margin: 20px 0;
         }
 
         /* Imágenes y Gráficos */
         .media-container {
             text-align: center;
-            margin: 20px 0;
+            margin: 25px 0;
         }
 
         img {
             max-width: 100%;
             height: auto;
             border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .logo-img {
+            box-shadow: none;
+            margin: 20px 0;
         }
 
         .banner-img {
@@ -86,13 +96,15 @@
         .source-list {
             list-style: none;
             padding: 0;
+            margin: 20px 0;
         }
 
         .source-list li {
             margin-bottom: 10px;
-            padding: 10px;
-            background: #f1f1f1;
+            padding: 12px;
+            background: #f8f9fa;
             border-radius: 4px;
+            border-right: 3px solid #D35400;
         }
 
         .source-list a {
@@ -109,12 +121,11 @@
             border: 0;
             height: 2px;
             background: #eee;
-            margin: 40px 0;
+            margin: 50px 0;
         }
 
-        /* Clases de utilidad para los reportes */
         .report-block {
-            margin-bottom: 60px;
+            margin-bottom: 80px;
         }
     </style>
 </head>
@@ -122,84 +133,111 @@
 
 <div class="container">
     <h1>Trabajo Práctico</h1>
-    <p class="author-name">Nombre: Luis Jesus Trujillo La Torre</p>
+    <p class="author-name">Autor: Luis Jesus Trujillo La Torre</p>
     
     <div class="media-container">
         <img src="./images/Wallpaper.jpg" class="banner-img" alt="Encabezado del proyecto">
     </div>
 
-    <h2>Fuentes</h2>
+    <h2>Fuentes y Enlaces Externos</h2>
     <ul class="source-list">
-        <li><strong>URL del presente proyecto:</strong> 
-            <a href="https://viu-cg4a--8080--4c73681d.local-credentialless.webcontainer.io">my_project_url</a>
-        </li>
-        <li><strong>URL de Google Colab:</strong> 
-            <a href="https://colab.research.google.com/drive/1UrhLJZcCVR1goVqSdoMAf_vUiU8cat1e?usp=sharing">google_colab</a>
-        </li>
-        <li><strong>URL de Kaggle:</strong> 
-            <a href="https://www.kaggle.com/datasets/disham993/9000-movies-dataset">dataset</a>
-        </li>
+        <li><strong>Repositorio GitHub:</strong> <a href="https://stackblitz.com/~/github.com/ltrujillolatorre/viu">ltrujillolatorre/viu</a></li>
+        <li><strong>Despliegue Webcontainer:</strong> <a href="https://viu-cg4a--8080--4c73681d.local-credentialless.webcontainer.io">my_project_url</a></li>
+        <li><strong>Notebook de Trabajo:</strong> <a href="https://colab.research.google.com/drive/1UrhLJZcCVR1goVqSdoMAf_vUiU8cat1e?usp=sharing">google_colab</a></li>
+        <li><strong>Dataset Original:</strong> <a href="https://www.kaggle.com/datasets/disham993/9000-movies-dataset">Kaggle MyMovieDB</a></li>
     </ul>
 
-    <h2>Descripción General</h2>
+    <h2>Descripción General del Proyecto</h2>
     <div class="description">
-        <p>Este proyecto es una solución integral de <strong>Data Engineering</strong> y <strong>Business Intelligence</strong> diseñada para analizar el mercado global del cine. El flujo de trabajo abarca desde la limpieza programática en Python hasta la publicación de resultados en la web, integrando herramientas líderes en la industria para transformar un dataset crudo (MyMovieDB) en una plataforma de consulta interactiva.</p>
+        <p>Este proyecto constituye una solución integral de <strong>Data Engineering</strong> y <strong>Business Intelligence</strong> orientada al análisis del mercado cinematográfico global. El flujo de trabajo abarca desde la limpieza programática en <strong>Python</strong> hasta la publicación de resultados interactivos, integrando herramientas líderes para transformar datos crudos en una plataforma estratégica de toma de decisiones.</p>
     </div>
 
     <hr>
 
     <section class="report-block">
         <div class="media-container">
-            <h2>Google Colab</h2>
-            <img src="./images/Logo_Colab.png" width="200" alt="Logo Colab">
+            <h2>Google Colab & Plotly</h2>
+            <img src="./images/Logo_Colab.png" width="200" class="logo-img" alt="Logo Colab">
         </div>
 
-        <h3>Top 10 Películas más Populares y su Fecha de Estreno</h3>
+        <h3>1. Top 10 Películas más Populares y su Fecha de Estreno</h3>
         <p><b>Tipo de Gráfico:</b> Gráfico de Barras Horizontales (Horizontal Bar Chart).</p>
-        <p><b>Descripción:</b> Análisis de popularidad dentro del dataset <i>mymoviedb_limpio.csv</i>.</p>
-        <p><b>Justificación:</b> El estándar técnico para análisis "Top-K", facilitando la lectura de títulos largos.</p>
+        <p><b>Pregunta de Negocio:</b> ¿Cuáles son las 10 películas más populares del catálogo y en qué momento reciente se produjeron sus estrenos?</p>
+        <p><b>Justificación:</b> La orientación horizontal facilita la lectura de títulos largos, eliminando la carga cognitiva y permitiendo una comparación directa de la métrica de Popularidad.</p>
         
-        <div id="10ce02bf-1f8f-4ef7-afb0-94dbd68aef78"></div>
+        <div id="10ce02bf-1f8f-4ef7-afb0-94dbd68aef78" class="plotly-graph-div" style="height:600px; width:100%;"></div>
 
-        <h3>Tendencias del Cine: Cantidad, Popularidad y Calidad por Año</h3>
-        <p><b>Tipo de Gráfico:</b> Bubble Chart con interactividad.</p>
-        <p><b>Pregunta de Negocio:</b> ¿Cómo ha afectado el volumen de producción a la calidad percibida?</p>
+        <h3>2. Tendencias del Cine: Cantidad, Popularidad y Calidad por Año</h3>
+        <p><b>Tipo de Gráfico:</b> Gráfico de Burbujas Temporal (Bubble Chart) animado.</p>
+        <p><b>Pregunta de Negocio:</b> ¿Cómo ha afectado el incremento masivo en el volumen de producción a la calidad percibida por el público?</p>
+        <p><b>Justificación:</b> Permite visualizar cuatro dimensiones simultáneamente ($X, Y, Tamaño, Color$), revelando que el pico de producción en 2019 no siempre garantiza un aumento proporcional en la calidad crítica.</p>
         
-        <div id="29575ca4-91ca-4de1-b89e-7f701173ab05"></div>
+        <div id="c1d1f83c-58a8-46fd-b048-01347b4fb2af" class="plotly-graph-div" style="height:700px; width:100%;"></div>
+
+        <h3>3. Distribución Anual por Género (Desde 1980)</h3>
+        <p><b>Tipo de Gráfico:</b> Gráfico de Barras Apiladas (Stacked Bar Chart).</p>
+        <p><b>Enfoque:</b> Composición de Mercado e impacto de la pandemia (2020-2022).</p>
         
-        <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
-        </section>
+        <div id="46060497-dfb2-4158-824c-fe0a41005f2f" class="plotly-graph-div" style="height:700px; width:100%;"></div>
+
+        <h3>4. Evolución Histórica: Top 5 Géneros Dominantes</h3>
+        <p><b>Tipo de Gráfico:</b> Gráfico de Líneas Multivariado (Series Temporales).</p>
+        <p><b>Justificación:</b> Valida que el <strong>Drama</strong> ha sido históricamente el género con mayor volumen, distanciándose del resto significativamente a partir de 2015.</p>
+        
+        <div id="b983dbbc-a367-44d2-9306-d32364d9f6b5" class="plotly-graph-div" style="height:650px; width:100%;"></div>
+    </section>
 
     <hr>
 
     <section class="report-block">
         <div class="media-container">
-            <h2>PowerBI</h2>
-            <img src="./images/Logo_PowerBI.png" width="200" alt="Logo Power BI">
+            <h2>Business Intelligence con Power BI</h2>
+            <img src="./images/Logo_PowerBI.png" width="200" class="logo-img" alt="Logo Power BI">
         </div>
 
-        <h3>Participación de Votos por Género y Popularidad de Contenido</h3>
-        <p><b>Enfoque:</b> Toma de Decisiones (Inversión/Producción).</p>
+        <h3>Participación de Votos y Popularidad de Contenido</h3>
+        <p><b>Visualización:</b> Treemap (Mapa de Árbol)</p>
         <div class="media-container">
-            <img src="./images/Vis_1.jpg" alt="Visualización Treemap">
+            <img src="./images/Vis_1.jpg" alt="Treemap de Votos">
         </div>
+        <p>Se utiliza para identificar estructuras jerárquicas y proporcionales, facilitando la detección de géneros con alta relevancia actual a pesar de tener menor volumen.</p>
 
-        <h3>Top 10 de Calificaciones Promedio</h3>
+        <h3>Top 10 de Calificaciones por Diversidad Lingüística</h3>
+        <p><b>Visualización:</b> Gráfico de Columnas Agrupadas</p>
         <div class="media-container">
-            <img src="./images/Vis_2.jpg" alt="Gráfico de Columnas">
+            <img src="./images/Vis_2.jpg" alt="Gráfico de Columnas de Calidad">
         </div>
+        <p>La visualización demuestra que el mercado tiende a estabilizarse en un promedio de 6.4, donde la calidad superior (7.2) es un recurso escaso y competitivo.</p>
 
-        <h3>Análisis Jerárquico del Top 5 de géneros</h3>
+        <h3>Análisis Jerárquico de Mercados Lingüísticos</h3>
+        <p><b>Visualización:</b> Esquema Jerárquico</p>
         <div class="media-container">
-            <img src="./images/Vis_3.jpg" alt="Esquema Jerárquico">
+            <img src="./images/Vis_3.jpg" alt="Esquema Jerárquico de Idiomas">
         </div>
+        <p>Permite observar la trazabilidad desde el volumen total hasta el comportamiento de los 5 idiomas líderes: <strong>zh, th, tr, tl y uk</strong>.</p>
 
-        <h3>Tendencias de Popularidad y Calificación</h3>
+        <h3>Tendencias Animadas: Popularidad vs Calidad Crítica</h3>
+        <p><b>Visualización:</b> Gráfico de Dispersión Animado (Scatter Chart)</p>
         <div class="media-container">
             <img src="./images/Vis_4.jpg" alt="Gráfico de Dispersión Animado">
         </div>
+        <p>Utiliza un eje de reproducción para observar la trayectoria histórica, permitiendo identificar mercados emergentes con crecimiento sostenido en la última década.</p>
     </section>
 </div>
+
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<script type="text/javascript">
+    window.PlotlyConfig = {MathJaxConfig: 'local'};
+    window.PLOTLYENV=window.PLOTLYENV || {};
+
+    // Aquí insertas los bloques Plotly.newPlot que contienen tus datos específicos
+    // Ejemplo para el gráfico de barras top 10:
+    if (document.getElementById("10ce02bf-1f8f-4ef7-afb0-94dbd68aef78")) {
+        Plotly.newPlot("10ce02bf-1f8f-4ef7-afb0-94dbd68aef78", [/* TUS DATOS JSON */], {/* TU LAYOUT */}, {responsive: true});
+    }
+    
+    // Repetir para el resto de IDs: "c1d1f83c-58a8-46fd-b048-01347b4fb2af", "46060497-dfb2-4158-824c-fe0a41005f2f", "b983dbbc-a367-44d2-9306-d32364d9f6b5"
+</script>
 
 </body>
 </html>
